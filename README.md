@@ -59,6 +59,7 @@ Here are the installed plugins:
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters)
 - [smex](https://github.com/nonsequitur/smex)
 - [yaml-mode](https://github.com/yoshiki/yaml-mode)
+- [emacs-neotree](https://github.com/jaypei/emacs-neotree)
 
 ## Where to Go Next
 

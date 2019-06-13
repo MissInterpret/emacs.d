@@ -228,4 +228,9 @@
   (interactive)
   (insert (format-time-string "%Y %B %e")))
 
+;; Configure neotree
+(add-to-list 'load-path "~/config/emacs.d/neotree")
+(require 'neotree)
+(global-set-key (kbd "C-t") 'neotree-toggle)
+
 ;; Done.
