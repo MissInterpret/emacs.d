@@ -1,7 +1,9 @@
 ;; Use package to install external packages.
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+             ;;'("melpa" . "http://melpa.org/packages/")
+             '("melpa" . "http://melpa.milkbox.net/packages/")
+             t)
 (package-initialize)
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -19,7 +21,8 @@
     projectile
     rainbow-delimiters
     smex
-    yaml-mode))
+    yaml-mode
+    company-terraform))
 ;; Ensure emacs shells start with the same environment as regular shells on
 ;; macOS.
 (if (eq system-type 'darwin)
@@ -44,10 +47,10 @@
 ;; increase font size for better readability.
 (set-face-attribute 'default nil :height 150)
 ;; Configure initial frame size on start.
-(setq initial-frame-alist '((top . 0)
-                            (left . 100)
-                            (width . 90)
-                            (height . 90)))
+(setq initial-frame-alist '((top . 10)
+                            (left . 20)
+                            (width . 180)
+                            (height . 50)))
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
 ;; Use a dark theme to be easy on the eyes.
